@@ -1,10 +1,793 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <meta charset="UTF-8" />
+  <title>Bereits jede zweite Lehrkraft hat KI für die Schule genutzt</title>
+  <link rel="stylesheet" href="wps2_projektarbeit_Willy_Darcisse_Fonkou_Kamte.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="wps2_projektarbeit_Willy_Darcisse_Fonkou_Kamte.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+<nav class="navbar container see">
+  <aside class="logo">
+    <a class="sub_logo" href="#">BITKOM</a>
+  </aside>
 
+  <input type="checkbox" id="sidebar-active"/>
+  <label for="sidebar-active" class="close-sidebar-button">
+    <svg xmlns="http://www.w3.org/2000/svg" height="82px" viewBox="0 -960 960 960" width="70px" fill="#FFFFFFFF">
+      <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+    </svg>
+  </label>
+  <label for="sidebar-active" class="open-sidebar-button">
+    <svg xmlns="http://www.w3.org/2000/svg" height="82px" viewBox="0 -960 960 960" width="70px" fill="#4E148CFF">
+      <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+    </svg>
+  </label>
+  <!------------------------------------nav-ul--------------------------------------------->
+  <ul class="nav-ul">
+    <span class="hover-elt"></span>
+    <li>
+      <div class="main_title">
+        <aside> Themen </aside>
+        <svg xmlns="http://www.w3.org/2000/svg"  height="30px" viewBox="0 0 320 512" width='30px'  fill="#4E148CFF" class="chevron-right">
+          <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+        </svg>
+      </div>
+      <ul class="sub-menu">
+        <li class="position"><svg xmlns="http://www.w3.org/2000/svg"  width='30px' height='30px' viewBox="0 0 320 512" class="chevron-left"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></li>
+        <li><a href="#">Themen von A - Z</a></li>
+        <li><a href="#">Umwelt & Nachhaltigkeit</a></li>
+        <li><a href="#">Datenschutz & Sicherheit</a></li>
+        <li><a href="#">Startups & Scaleups</a></li>
+        <li><a href="#">Public Sector</a></li>
+        <li><a href="#">Digitale Transformation</a></li>
+        <li><a href="#">Bildung & Arbeit</a></li>
+        <li><a href="#">Technologien & Software</a></li>
+        <li><a href="#">Recht & Regulierung</a></li>
+        <li><a href="#">Politik</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <div class="main_title">
+        <aside> Daten </aside>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width='30px' height='30px' class="chevron-right" >
+          <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+        </svg>
+      </div>
+      <ul class="sub-menu">
+        <li class="position"><svg xmlns="http://www.w3.org/2000/svg"  width='30px' height='30px' viewBox="0 0 320 512" class="chevron-left"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></li>
+        <li><a href="#">Alle Daten</a></li>
+        <li><a href="#">Märkte</a></li>
+        <li><a href="#">Digitalindex</a></li>
+        <li><a href="#">Arbeitsmarkt</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="main_title">
+        <aside>Events </aside>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width='30px' height='30px' class='chevron-right'>
+          <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+        </svg>
+      </div>
+      <ul class="sub-menu">
+        <li class="position"><svg xmlns="http://www.w3.org/2000/svg"  width='30px' height='30px' viewBox="0 0 320 512" class="chevron-left"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></li>
+        <li><a href="#">Alle Events</a></li>
+        <li><a href="#">Transform</a></li>
+        <li><a href="#">Safer Internet Day</a></li>
+        <li><a href="#">Bildungskonferenz</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="main_title">
+        <aside> Presse </aside>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width='30px' height='30px' class='chevron-right'>
+          <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+        </svg>
+      </div>
+      <ul class="sub-menu">
+        <li class="position"><svg xmlns="http://www.w3.org/2000/svg"  width='30px' height='30px' viewBox="0 0 320 512" class="chevron-left"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></li>
+        <li><a href="#">Presseinformationen</a></li>
+        <li><a href="#">Termine</a></li>
+        <li><a href="#">Presseverteiler</a></li>
+        <li><a href="#">Pressefotos</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Social Media</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <div class="main_title">
+        <aside> Mediatek</aside>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width='30px' height='30px' class='chevron-right'>
+          <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+        </svg>
+      </div>
+      <ul class="sub-menu">
+        <li class="position"><svg xmlns="http://www.w3.org/2000/svg"  width='30px' height='30px' viewBox="0 0 320 512" class="chevron-left"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></li>
+        <li><a href="#">Im Fokus</a></li>
+        <li><a href="#">Publikationen</a></li>
+        <li><a href="#">Podcasts</a></li>
+        <li><a href="#">Videos</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <div class="main_title">
+        <aside>Karriere</aside>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width='30px' height='30px' class='chevron-right'>
+          <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+        </svg>
+      </div>
+      <ul class="sub-menu">
+        <li class="position"><svg xmlns="http://www.w3.org/2000/svg"  width='30px' height='30px' viewBox="0 0 320 512" class="chevron-left"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></li>
+        <li><a href="#"> beim Bitkom</a></li>
+        <li><a href="#">Freie Stellen</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <div class="main_title">
+        <aside class="last_elt">Mitgliedschaft </aside>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width='30px' height='30px' class='chevron-right'>
+          <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+        </svg>
+      </div>
+      <ul class="sub-menu stiky-right">
+        <li class="position"><svg xmlns="http://www.w3.org/2000/svg"  width='30px' height='30px' viewBox="0 0 320 512" class="chevron-left"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></li>
+        <li><a href="#">Neu im Bitkom</a></li>
+        <li><a href="#">Startup-Mitglied werden</a></li>
+        <li><a href="#">Mitgliederportal</a></li>
+        <li><a href="#">Mitglied werden</a></li>
+        <li><a href="#">Vorteile einer Mitgliedschaft</a></li>
+        <li><a href="#">Mitgliederliste</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<header class="container block">
+  <h1 class="TITLE">
+    <span class="block-0">Bereits jede zweite</span>
+    <span class="block-1">Lehrkraft</span>
+    <span class="block-0"> hat </span>
+    <span class="block-2">KI</span>
+    <span class="block-0">für die </span>
+    <span class="block-3">Schule</span>
+    <span class="block-0"> genutzt </span>
+  </h1>
+  <h2 class="block-1">Aus der Presse kommende Information</h2>
+</header>
+
+<div class="carousel container block">
+
+  <div class="relative block-4" data-slider>
+
+    <div class="slide__navigation prev" data-slider-prev>
+      <svg class="Svg" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="38px" fill="#5f6368"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>
+    </div>
+
+    <div class="slide__navigation next" data-slider-next>
+      <svg class="Svg" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="38px" fill="#5f6368"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg>
+    </div>
+
+    <div id="rooms" class="rooms slides" data-slider-wrapper>
+
+      <div class="styleSlide slide room">
+        <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_01.jpg" alt=""/>
+        <div class="footer__bild">
+          <a href="#" class="text__footer">Quelle:https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt</a>
+        </div>
+      </div>
+
+      <div class="styleSlide slide room">
+        <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_02.jpg" alt=""/>
+        <div class="footer__bild">
+          <a href="#">Quelle:https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt</a>
+        </div>
+      </div>
+
+      <div class="styleSlide slide room">
+        <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_03.jpg" alt=""/>
+        <div class="footer__bild">
+          <a href="#">Quelle:https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt</a>
+        </div>
+      </div>
+
+      <div class="styleSlide slide room">
+        <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_04.jpg" alt=""/>
+        <div class="footer__bild">
+          <a href="#">Quelle:https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt</a>
+        </div>
+      </div>
+
+      <div class="styleSlide slide room">
+        <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_05.jpg" alt=""/>
+        <div class="footer__bild">
+          <a href="#">Quelle:https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt</a>
+        </div>
+      </div>
+
+      <div class="styleSlide slide room">
+        <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_06.jpg" alt=""/>
+        <div class="footer__bild">
+          <a href="#">Quelle:https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt</a>
+        </div>
+      </div>
+
+      <div class="styleSlide slide room">
+        <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_07.jpg" alt=""/>
+        <div class="footer__bild">
+          <a href="#">Quelle:https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt</a>
+        </div>
+      </div>
+
+      <div class="styleSlide slide room">
+        <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_08.jpg" alt=""/>
+        <div class="footer__bild">
+          <a href="#">Quelle:https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt</a>
+        </div>
+      </div>
+
+      <div class="styleSlide slide room">
+        <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_09.jpg" alt=""/>
+        <div class="footer__bild">
+          <a href="#">Quelle:https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt</a>
+        </div>
+      </div>
+
+      <div class="styleSlide slide room">
+        <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_10.jpg" alt=""/>
+        <div class="footer__bild">
+          <a href="#">Quelle:https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt</a>
+        </div>
+      </div>
+
+      <div class="styleSlide slide room">
+        <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_11.jpg" alt=""/>
+        <div class="footer__bild">
+          <a href="#">Quelle:https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt</a>
+        </div>
+      </div>
+
+      <div class="styleSlide slide room">
+        <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_12.jpg" alt=""/>
+        <div class="footer__bild">
+          <a href="#">Quelle:https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt</a>
+        </div>
+      </div>
+
+      <div class="styleSlide slide room">
+        <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_13.jpg" alt=""/>
+        <div class="footer__bild">
+          <a href="#">Quelle:https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt</a>
+        </div>
+      </div>
+
+      <div class="styleSlide slide room">
+        <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_14.jpg" alt=""/>
+        <div class="footer__bild">
+          <a href="#">Quelle:https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<section class="container stat block">
+  <ul class="block-4">
+    <li>Einsatz für Wissensvermittlung, Prüfungsvorbereitung oder Hausaufgaben</li>
+    <li>
+      Bei vielen Lehrerinnen und Lehrern herrscht aber große Unsicherheit im Umgang
+      mit KI
+    </li>
+    <li class="line">
+      Digitalisierung der Schulen kommt voran: Notebooks werden zum Standard, aber
+      fast jede zweite <br />Lehrkraft setzt noch Overhead-Projektoren ein
+    </li>
+    <li>90 Prozent fordern schnellstmöglich einen Digitalpakt 2.0</li>
+  </ul>
+  <main class="bild_text1 block-4">
+    <img class="bild1" src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_08.jpg" alt="" />
+    <p class="berlin">
+      Berlin, 09. Oktober 2024 – Neue Deutsch-Aufgaben entwickeln, Elternbriefe
+      verfassen, ganze Unterrichtsstunden planen – viele Lehrerinnen und Lehrer nutzen
+      Künstliche Intelligenz für schulische Zwecke. So haben bereits 51 Prozent
+      Erfahrungen etwa mit Anwendungen wie ChatGPT, SchulKI, FieteAI in schulischem
+      Kontext gesammelt: 28 Prozent werden dies auch künftig tun, 23 Prozent haben
+      entsprechende Tools zwar schon für den Unterricht ausprobiert, wollen sie aber
+      nicht wieder nutzen. Auch darüber hinaus ist das Interesse der Lehrenden an KI
+      groß: So haben weitere 28 Prozent KI für den Unterricht noch nicht ausprobiert,
+      wollen dies aber bald tun. <br />7 Prozent haben KI bislang nur für private
+      Zwecke genutzt. Lediglich jede zehnte Lehrkraft (11 Prozent) schließt den
+      KI-Einsatz kategorisch aus. Das sind Ergebnisse einer repräsentativen Befragung
+      unter 502 Lehrerinnen und Lehrern der Sekundarstufen I und II in Deutschland,
+      die im Auftrag des Digitalverbands Bitkom durchgeführt wurde. „KI ist eine der
+      wichtigsten Zukunftstechnologien. KI eröffnet neue Chancen für das Lehren und
+      Lernen“, sagt Bitkom-Hauptgeschäftsführer Dr. Bernhard Rohleder.
+    </p>
+  </main>
+</section>
+
+<section class="container main block">
+  <h2 class="block-4">Wofür KI von Lehrerinnen und Lehrer eingesetzt wird</h2>
+
+  <h3 class="title_diagramm2 block-4">Inwiefern haben KI für Schulische Zwecke genutzt?</h3>
+  <canvas class="block-4" id="myChart" aria-label="chart" role="img"></canvas>
+  <div class="caption block-4">
+    Basis: 256 Befragte, die KI bereits für die Schulische Zwecke genutzt haben Tresor |
+    Mehrfachnennungen möglich | Quelle: Bitkom Research 2024
+  </div>
+</section>
+
+<section class="container block">
+  <button class="accordion pdf block-4">Collapsible Content</button>
+</section>
+
+<section class="panel block">
+  <section class="container stat-2 block-4">
+    <p class="title">37 Prozent haben KI-Nutzung für Hausaufgaben verboten</p>
+    <aside class="right-1">
+      <img src="assets/imgs/241009-bitkomcharts-bildung24-final_Seite_10.jpg" alt="" class="img2"/>
+      <p class="lehrer">
+        Die Lehrerinnen und Lehrer, die KI bereits für schulische Zwecke genutzt
+        haben, berichten in diesem Zusammenhang von vielfältigen Anwendungsfeldern:
+        81 Prozent haben KI konkret zur Wissensvermittlung im Unterricht eingesetzt
+        und 59 Prozent, um Schülerinnen und Schülern KI zu erklären. 43 Prozent
+        haben mithilfe von KI-Tools individuelles Feedback gegeben und rund ein
+        Drittel (36 Prozent) hat Unterrichtsstunden damit vorbereitet. 30 Prozent
+        haben sich Prüfungsaufgaben von einer KI erstellen lassen, 29 Prozent
+        wiederum Prüfungen bzw. Aufgaben mithilfe von KI kontrolliert. Ein Zehntel
+        der Lehrerinnen und Lehrer, die KI bereits für den Unterricht genutzt haben,
+        haben die Nutzung von KI ganz konkret als Hausaufgabe aufgegeben (10
+        Prozent). Umgekehrt haben 37 Prozent ihren Schülerinnen und Schülern die
+        Nutzung von KI für Hausaufgaben verboten. Überhaupt gibt es gerade beim
+        Thema Hausaufgaben große Unsicherheiten innerhalb der Lehrerschaft. Nur 9
+        Prozent meinen sicher zu erkennen, wenn Hausaufgaben mit KI gemacht wurden,
+        weitere 32 Prozent würden sich das zumindest eher zutrauen, 55 Prozent
+        trauen sich dies hingegen nicht zu. <br />80 Prozent der befragten
+        Lehrerinnen und Lehrer meinen: Alle Schülerinnen und Schüler sollten lernen,
+        wie man KI nutzt. Es gibt jedoch auch Vorbehalte zum Einsatz von KI in der
+        Schule - 39 Prozent sagen sogar: KI hat in der Schule nichts verloren. Trotz
+        der Skepsis stimmen aber auch unter diesen Befragten 79 Prozent zu, dass
+        alle Schülerinnen und Schüler KI-Kompetenzen erlernen sollten. „Schulen
+        müssen Kinder und Jugendliche mit Künstlicher Intelligenz vertraut machen.
+        Wo, wenn nicht in den Schulen, sollen sie den kompetenten Einsatz von KI
+        lernen?“, so Rohleder. „Wichtig ist, dass Lehrerinnen und Lehrer bei
+        Künstlicher Intelligenz und ihrer Didaktik mit Fortbildungsangeboten
+        unterstützt werden.“ Knapp drei Viertel (72 Prozent) wünschen sich
+        dementsprechend ,mehr über die Anwendungsmöglichkeiten von KI im schulischen
+        Kontext zu lernen.
+      </p>
+    </aside>
+  </section>
+  <section class="container title-2 block">
+    <p class="title block-4">Lehrerinnen und Lehrer fordern schnellen Digitalpakt 2.0</p>
+    <p class="absatz block-4">
+      Wie steht es insgesamt um die Digitalisierung von Deutschlands Schulen? 92
+      Prozent der Lehrerinnen und Lehrer sehen spürbare Verbesserungen durch den
+      Digitalpakt Schule, der zwischen Mai 2019 und 2024 Gelder für die
+      Digitalisierung der Schulen bereitgestellt hat, etwa für die Ausstattung mit
+      WLAN, Tablets oder Computern und für die Netzwerkadministration. 90 Prozent
+      fordern daher auch eine möglichst schnelle Anschlussfinanzierung, 93 Prozent
+      fordern, ein Digitalpakt 2.0 müsse auch Gelder für Lizenzen, Lernmaterialien und
+      Fortbildungen enthalten. Rohleder: „Trotz Verankerung im Koalitionsvertrag hat
+      die Bundesregierung den Digitalpakt 2.0 bislang nicht auf die Beine gestellt.
+      Durch die fehlende Anschlussfinanzierung werden Schulen und Kommunen bei Betrieb
+      und Verwaltung bestehender digitaler Infrastruktur allein gelassen. Ihnen fehlen
+      Planungssicherheit und Perspektive, wie digitales Lehren langfristig ermöglicht
+      und weiterentwickelt werden soll. Hard- und Software muss aktuell gehalten und
+      Sicherheitslücken müssen geschlossen werden.“ Fast zwei Drittel (65 Prozent) der
+      Lehrerinnen und Lehrer sehen die Gefahr, dass die digitalen Geräte an ihrer
+      Schule ohne Anschlussfinanzierung zur Investitionsruine werden. Lediglich 12
+      Prozent halten einen Digitalpakt 2.0 für überflüssig. „Bund und Länder müssen
+      sich schnell auf ein tragfähiges Konzept für den Digitalpakt 2.0 einigen“,
+      betont Bitkom-Hauptgeschäftsführer Dr. Bernhard Rohleder.
+    </p>
+    <p class="title title-2 block-4">
+      Beamer und Notebooks sind Standard, 3D-Drucker an jeder <br />
+      zehnten Schule
+    </p>
+    <p class="absatz block-4">
+      Viele Schulen verfügen bereits über eine digitale Grundausstattung. Beamer (98
+      Prozent) sind in praktisch allen Schulen vorhanden, 89 Prozent verfügen außerdem
+      über Notebooks, wobei diese an jeder dritten Schule als kompletter Klassensatz
+      vorhanden sind (33 Prozent), mindestens jedoch als Einzelgeräte (61 Prozent)
+      oder in speziellen Fachräumen (29 Prozent). Jede zwanzigste Schule (5 Prozent)
+      stellt Notebooks in allen Unterrichtsräumen zur Verfügung. 85 Prozent der
+      Schulen haben stationäre PCs im Einsatz, drei Viertel (72 Prozent) interaktive
+      Whiteboards bzw. digitale Smartboards, also elektronische Tafeln mit
+      Bildschirmsteuerung. In 7 von 10 Schulen gibt es Tablets, allerdings sind in
+      diesem Fall vor allem Einzelgeräte im Einsatz (52 Prozent). 14 Prozent der
+      Schulen verfügen über Tablets als mobilen Klassensatz und 25 Prozent bieten die
+      Geräte in speziellen Fachräumen an. Nur 2 Prozent der Schulen in Deutschland
+      haben alle Unterrichtsräume mit Tablets ausgestattet. 65 Prozent der Schulen
+      bieten ihren Schülerinnen und Schülern die Arbeit mit Foto- und Videokameras an
+      und 43 Prozent verfügen über Smartphones, die für den Unterricht eingesetzt
+      werden können. Seltener sind hingegen Virtual-Reality-Brillen (16 Prozent),
+      3D-Drucker (10 Prozent), Roboter (7 Prozent) und Drohnen (3 Prozent) an
+      deutschen Schulen zu finden.
+    </p>
+  </section>
+
+  <section class="container block-4">
+    <p class="title title-2">
+      Fast die Hälfte nutzt im Unterricht noch den Overhead-Projektor
+    </p>
+    <p class="absatz">
+      Wie häufig werden die entsprechenden Geräte von Lehrerinnen und Lehrern im
+      Unterricht genutzt? Vor allem das interaktive Smartboard wird oft verwendet, 62
+      Prozent haben es immer oder häufig im Einsatz, 6 Prozent selten. Die Hälfte der
+      Lehrerinnen und Lehrer (50 Prozent) setzt immer bzw. häufig Notebooks im
+      Unterricht ein, 36 Prozent tun dies selten. Knapp dahinter folgen Tablets, die
+      49 Prozent immer bzw. häufig und 30 Prozent selten nutzen. 40 Prozent verwenden
+      Beamer immer oder häufig im Unterricht, weitere 40 Prozent tun dies selten. Der
+      Overhead-Projektor, ein Relikt aus vordigitalen Zeiten, ist ebenfalls noch
+      vielfach im Klassenzimmer zu finden: Ein Fünftel der Lehrerinnen und Lehrer (19
+      Prozent) nutzt immer bzw. häufig den Overhead-Projektor, 27 Prozent tun dies
+      selten. Smartphones werden nur von einer Minderheit von 3 Prozent der
+      Lehrerinnen und Lehrer häufig oder immer im Unterricht genutzt, ein Drittel (32
+      Prozent) setzt die Geräte zumindest hin und wieder ein. „Smartphones sind für
+      viele Kinder und Jugendliche fester Teil ihres Alltags. Der verantwortungsvolle
+      Umgang sollte ebenso wie Medienkompetenz selbstverständlich Inhalt des
+      Unterrichts sein und in jeder Jahrgangsstufe vermittelt werden“, betont
+      Bitkom-Hauptgeschäftsführer Dr. Bernhard Rohleder. „Debatten um pauschale
+      Handyverbote sind wirklichkeitsfremd und führen an der Lebensrealität der jungen
+      Menschen vorbei.“
+    </p>
+    <p class="title title-2">
+      Mehr Motivation im Klassenzimmer – aber auch die Gefahr <br />von Ablenkung
+    </p>
+    <p class="absatz">
+      Den Einsatz digitaler Technologien im Unterricht sieht die Lehrerschaft
+      zwiegespalten. Auf der einen Seite erkennt die weit überwiegende Mehrheit einige
+      Vorteile: Die Schülerinnen und Schüler seien motivierter (86 Prozent) und würden
+      auf das Leben und Arbeiten in der digitalen Welt vorbereitet (71 Prozent), das
+      Experimentieren mit digitalen Technologien fördere außerdem die Kreativität der
+      Schülerinnen und Schüler (67 Prozent). Auf der anderen Seite erkennen einige
+      Lehrerinnen und Lehrer auch Nachteile. 45 Prozent sehen Schülerinnen und Schüler
+      durch digitale Technologien im Unterricht abgelenkt. 34 Prozent fürchten eine
+      stärkere Kontrolle durch Eltern oder Schulleitung durch den Einsatz der Geräte
+      und Anwendungen.
+    </p>
+  </section>
+
+  <section class="container block-4">
+    <p class="absatz">
+      Das Zeugnis, das die befragten Lehrerinnen und Lehrer ihrer Schule in
+      Digitalfragen ausstellen, ist zwar insgesamt mittelmäßig und hat sich im
+      Vergleich zu einer Bitkom-Studie aus dem Jahr 2019 nur leicht verbessert –
+      gleichwohl dürften die Anforderungen der Lehrerschaft an die technische
+      Ausstattung ihrer Schulen im gleichen Zeitraum auch deutlich gestiegen sein. Die
+      technischen Voraussetzungen insgesamt werden auf der Schulnotenskala gerade mit
+      „befriedigend“ (3,1) bewertet – vor fünf Jahren betrug die Durchschnittsnote
+      3,3. Am besten schneiden die Geschwindigkeit der Internetverbindung – Note 2,7
+      (2019: 2,8) – und die Aktualität der Endgeräte mit einer 3,0 (2019: 3,2) ab. Die
+      größten Verbesserungen gibt es bei der Ausstattung mit Endgeräten und Software –
+      auf einem allerdings weiterhin niedrigen Niveau: So hat sich die Note für die
+      Verfügbarkeit von Softwarelizenzen in Relation zur Schülerzahl um 0,7
+      Notenpunkte von 4,2 im Jahr 2019 auf jetzt 3,5 verbessert. Die Bewertung der
+      Anzahl der Endgeräte in Relation zur Schülerzahl verbesserte sich um eine halbe
+      Notenstufe von 3,9 im Jahr 2019 auf nun 3,4. Diese beiden Kategorien werden
+      gleichwohl weiterhin am schlechtesten bewertet.
+    </p>
+    <p class="title title-2">
+      Überlastung der Lehrkräfte und Lehrermangel sind die größten<br />
+      Probleme
+    </p>
+    <p class="absatz">
+      Gefragt danach, was aktuell die größten Probleme an ihrer Schule sind, nennen
+      die Befragten vor allem die Überlastung der Lehrkräfte (74 Prozent), den
+      Lehrermangel (73 Prozent) sowie überfüllte Klassen (61 Prozent). Auch ein stark
+      unterschiedliches Leistungsniveau der Schülerinnen und Schüler (58 Prozent)
+      sowie eine schwierige Integration von Kindern mit geringen Deutschkenntnissen
+      (55 Prozent) macht den Lehrenden an deutschen Schulen zu schaffen. Jede vierte
+      Lehrkraft (26 Prozent) beklagt marode Schulgebäude. Die Digitalisierung ist
+      dabei nicht das drängendste, aber bei weitem auch nicht das geringste Problem:
+      Rund die Hälfte der Lehrerinnen und Lehrer (49 Prozent) moniert eine fehlende
+      Digitalisierungsstrategie ihrer Schule, 48 Prozent schlechtes Wlan und 43
+      Prozent eine schlechte technische Ausstattung. Rohleder: „Digitale Technologien
+      sind ein wichtiger Teil der Lösung vieler Probleme an deutschen Schulen: Sie
+      können u.a. überlastete Lehrkräfte unterstützen – nicht nur bei administrativen
+      Aufgaben, sondern auch bei der Gestaltung ihres Unterrichts. Gleichzeitig lernen
+      die Schülerinnen und Schüler bei ihrem Einsatz im Unterricht, sich Technologien
+      zunutze zu machen und sich selbstbewusster und sicherer in der digitalen Welt zu
+      bewegen.“
+    </p>
+    <p class="absatz">
+      Dabei begreifen die Lehrerinnen und Lehrer die Digitalisierung größtenteils als
+      Chance (88 Prozent) für die Bildung in Deutschland. Nur 10 Prozent sehen in ihr
+      ein Risiko. Die Vermittlung digitaler Kompetenzen stellt für die Mehrheit der
+      Lehrkräfte eine entsprechend wichtige schulische Aufgabe dar – rund drei Viertel
+      (78 Prozent) sagen, dass digitale Kompetenzen ebenso selbstverständlich in der
+      Schule vermittelt werden sollten wie Rechnen oder Schreiben. „Die Lehrerinnen
+      und Lehrer sind der Digitalisierung gegenüber sehr aufgeschlossen. Die
+      Bildungspolitik in Bund und Ländern muss sie dabei bestmöglich unterstützen“,
+      betont Rohleder. Aus Bitkom-Sicht muss dafür vor allem der Digitalpakt 2.0
+      beschlossen und der bisherige Förderrahmen um die Finanzierung von digitalen
+      Lehr- und Lernmaterialien und Lehrerfortbildungen erweitert werden. Dafür
+      brauche es mindestens eine Milliarde Euro pro Jahr bis 2030. Daneben sei die
+      bundesweite Verankerung eines Pflichtfachs Informatik für alle Schulformen ab
+      Sekundarstufe 1 überfällig. „Schülerinnen und Schüler müssen systematisch an die
+      Informatik und digitalen Themen herangeführt werden und dort eigene Kompetenzen
+      erwerben“, so Bitkom-Hauptgeschäftsführer Dr. Bernhard Rohleder. Außerdem
+      brauche es eine Offensive zur Vermittlung digitaler Kompetenzen an Lehrkräfte.
+      Rohleder: „Wenn Deutschland zukunfts- und wettbewerbsfähig bleiben will,
+      brauchen wir eine zeitgemäße Bildung, die uns mit anderen Nationen auf Augenhöhe
+      bringt.“
+    </p>
+  </section>
+</section>
+
+<section class="container schema block">
+  <div class="text block-4">
+    <h1 class="text__title">Jede zweite <br>Lehrkraft hat<br>bereits KI genutzt</h1>
+    <p class="mitte__text">Haben Sie schon <br>einmal künstliche <br>Intelligenz <br><a href="#" class="text__unterschrift">für schulische Zwecke</a> <br> genutzt?</p>
+    <aside class="Angabe"> In prozent</aside>
+    <p class="legend">Basis: Alle Befragten(n=502) | Quelle : Bitkom Research 2024</p>
+  </div>
+  <div class="diagram1 block-4">
+    <canvas class="sub__schema" id="chart2" width="50" height="50"></canvas>
+    <div class="text__legend">
+      <ul class="text1"><li class="color1">Nein, möchte ich auch künftig nicht</li></ul>
+      <ul class="text"><li class="color2">Nein, aber möchte ich bald nutzen</li></ul>
+      <ul class="text"><li class="color3">Nein, bislang nur für private Zwecke</li></ul>
+      <ul class="text"><li class="color4">Ja, aber werde ich künftig nicht wieder nutzen</li></ul>
+      <ul class="text"><li class="color5">Ja, und werde ich auch künftig nutzen</li></ul>
+    </div>
+  </div>
+</section>
+
+
+<section class="container block">
+  <p class="absatz block-4">
+    Bitkom zeichnet seit 2018 jedes Jahr digitale Vorreiterschulen als Smart Schools
+    aus. Diese verfügen über eine besonders gute digitale Infrastruktur, digitale
+    Curricula und digitalkompetente Lehrerinnen und Lehrer. Inzwischen umfasst das
+    Smart-School-Netzwerk 127 Vorreiterschulen –von Grundschulen über Gesamtschulen und
+    Gymnasien bis hin zu Berufsschulen, auch eine deutsche Auslandsschule im Silicon
+    Valley gehört dazu. Zweimal jährlich trifft sich das Netzwerk, um Best Practices
+    auszutauschen und aktuelle Herausforderungen zu diskutieren.Weitere Informationen
+    unter
+    <a href="https://www.bitkom.org/Smart-School" class="link block-4">
+      www.bitkom.org/smart-school </a>.
+  </p>
+</section>
+
+
+<section class="container btn block">
+  <button onclick="window.location.href='241009-bitkomcharts-bildung24-final.pdf'" class="pdf block-4">
+    Download als PDF
+  </button>
+</section>
+<i class="fa-sharp fa-solid fa-chevron-right"></i>
+
+
+
+<section class="container title-2 block">
+  <p class="title-3 block-4">Themen</p>
+  <span class="band block-4"></span>
+  <ul class="themen block-4">
+    <li class="sub-themen"><a href="#">Bildung</a></li>
+    <li><a href="#">Artificial Intelligence</a></li>
+    <li><a href="#">Bildung & Arbeit</a></li>
+  </ul>
+  <h4 class="title-4 block-4">Hinweis zur Methodik</h4>
+  <p class="block-4">
+    Grundlage der Angaben ist eine Umfrage, die
+    <a href="https://www.bitkom-research.de/"> Bitkom Research</a> im Auftrag des
+    Digitalverbands Bitkom durchgeführt hat. Dabei wurden 502 Lehrer der Sekundarstufe 1
+    und 2 an Hauptschulen, Schulen mit mehreren Bildungsgängen, Realschulen, Gymnasien,
+    integrierten Gesamtschulen und Waldorfschulen telefonisch befragt. Die Befragung
+    fand im Zeitraum von KW 23 bis KW 32 2024 statt. Die Umfrage ist repräsentativ.
+  </p>
+</section>
+
+
+
+<section class="container Text block">
+  <p class="block-4">
+    „Quelle: veröffentlicht am 9. Oktober 2024 auf
+    <a href="https://www.bitkom.org/Presse/Presseinformation/jede-zweite-Lehrkraft-KI-Schule-genutzt. ">www.bitkom.org.</a>“
+  </p>
+</section>
+
+
+<footer class="container">
+  <section>
+    <a href="#" class="logo__footer">BITKOM</a>
+    <ul>
+      <li><a href="#">Deutsch</a></li>
+      <li><a href="#">English</a></li>
+    </ul>
+  </section>
+
+  <section class="schutz">
+    <a href="#">Datenschutz</a>
+    <a href="#">Impressum</a>
+  </section>
+
+  <section class="socials">
+    <a href="#">
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+        <path
+                d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4 .4 67.6 .1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"
+        />
+      </svg>
+      <span>Docker</span>
+    </a>
+
+    <a href="#">
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528 512">
+        <path
+                d="M264.4 116.3l-132 84.3 132 84.3-132 84.3L0 284.1l132.3-84.3L0 116.3 132.3 32l132.1 84.3zM131.6 395.7l132-84.3 132 84.3-132 84.3-132-84.3zm132.8-111.6l132-84.3-132-83.6L395.7 32 528 116.3l-132.3 84.3L528 284.8l-132.3 84.3-131.3-85z"
+        />
+      </svg>
+      <span>Dropbox</span>
+    </a>
+
+    <a href="#">
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path
+                d="M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1 .9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2 .6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zM167.2 307.5c5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5 4.6 8.8 9.3 17.5 14.3 26.1zm-30.3-120.3c14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26-6.3-14.9-11.6-29.5-16-43.6zm27.4 68.9c6.6-13.8 13.8-27.3 21.4-40.6s15.8-26.2 24.4-38.9c15-1.1 30.3-1.7 45.9-1.7s31 .6 45.9 1.7c8.5 12.6 16.6 25.5 24.3 38.7s14.9 26.7 21.7 40.4c-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6s-30.9-.5-45.6-1.4c-8.7-12.7-16.9-25.7-24.6-39s-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6 .4 19.5 .6 29.5 .6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8 .9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zm-149.7-15c25.3 0 45.8-20.5 45.8-45.8s-20.5-45.8-45.8-45.8c-25.3 0-45.8 20.5-45.8 45.8s20.5 45.8 45.8 45.8z"
+        />
+      </svg>
+      <span>React</span>
+    </a>
+
+    <a href="#">
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+      </svg>
+      <span>Whatsapp</span>
+    </a>
+
+    <a href="#">
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path d="M388.3 104.1a4.7 4.7 0 0 0 -4.4-4c-2 0-37.2-.8-37.2-.8s-21.6-20.8-29.6-28.8V503.2L442.8 472S388.7 106.5 388.3 104.1zM288.7 70.5a116.7 116.7 0 0 0 -7.2-17.6C271 32.9 255.4 22 237 22a15 15 0 0 0 -4 .4c-.4-.8-1.2-1.2-1.6-2C223.4 11.6 213 7.6 200.6 8c-24 .8-48 18-67.3 48.8-13.6 21.6-24 48.8-26.8 70.1-27.6 8.4-46.8 14.4-47.2 14.8-14 4.4-14.4 4.8-16 18-1.2 10-38 291.8-38 291.8L307.9 504V65.7a41.7 41.7 0 0 0 -4.4 .4S297.9 67.7 288.7 70.5zM233.4 87.7c-16 4.8-33.6 10.4-50.8 15.6 4.8-18.8 14.4-37.6 25.6-50 4.4-4.4 10.4-9.6 17.2-12.8C232.2 54.9 233.8 74.5 233.4 87.7zM200.6 24.4A27.5 27.5 0 0 1 215 28c-6.4 3.2-12.8 8.4-18.8 14.4-15.2 16.4-26.8 42-31.6 66.5-14.4 4.4-28.8 8.8-42 12.8C131.3 83.3 163.8 25.2 200.6 24.4zM154.2 244.6c1.6 25.6 69.3 31.2 73.3 91.7 2.8 47.6-25.2 80.1-65.7 82.5-48.8 3.2-75.7-25.6-75.7-25.6l10.4-44s26.8 20.4 48.4 18.8c14-.8 19.2-12.4 18.8-20.4-2-33.6-57.2-31.6-60.8-86.9-3.2-46.4 27.2-93.3 94.5-97.7 26-1.6 39.2 4.8 39.2 4.8L221.4 225.4s-17.2-8-37.6-6.4C154.2 221 153.8 239.8 154.2 244.6zM249.4 82.9c0-12-1.6-29.2-7.2-43.6 18.4 3.6 27.2 24 31.2 36.4Q262.6 78.7 249.4 82.9z"/>
+      </svg>
+      <span>Shopify</span>
+    </a>
+
+    <a href="#">
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
+        <path
+                d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/>
+      </svg>
+      <span>Google</span>
+    </a>
+
+    <a href="#">
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path
+                d="M220.8 123.3c1 .5 1.8 1.7 3 1.7 1.1 0 2.8-.4 2.9-1.5 .2-1.4-1.9-2.3-3.2-2.9-1.7-.7-3.9-1-5.5-.1-.4 .2-.8 .7-.6 1.1 .3 1.3 2.3 1.1 3.4 1.7zm-21.9 1.7c1.2 0 2-1.2 3-1.7 1.1-.6 3.1-.4 3.5-1.6 .2-.4-.2-.9-.6-1.1-1.6-.9-3.8-.6-5.5 .1-1.3 .6-3.4 1.5-3.2 2.9 .1 1 1.8 1.5 2.8 1.4zM420 403.8c-3.6-4-5.3-11.6-7.2-19.7-1.8-8.1-3.9-16.8-10.5-22.4-1.3-1.1-2.6-2.1-4-2.9-1.3-.8-2.7-1.5-4.1-2 9.2-27.3 5.6-54.5-3.7-79.1-11.4-30.1-31.3-56.4-46.5-74.4-17.1-21.5-33.7-41.9-33.4-72C311.1 85.4 315.7 .1 234.8 0 132.4-.2 158 103.4 156.9 135.2c-1.7 23.4-6.4 41.8-22.5 64.7-18.9 22.5-45.5 58.8-58.1 96.7-6 17.9-8.8 36.1-6.2 53.3-6.5 5.8-11.4 14.7-16.6 20.2-4.2 4.3-10.3 5.9-17 8.3s-14 6-18.5 14.5c-2.1 3.9-2.8 8.1-2.8 12.4 0 3.9 .6 7.9 1.2 11.8 1.2 8.1 2.5 15.7 .8 20.8-5.2 14.4-5.9 24.4-2.2 31.7 3.8 7.3 11.4 10.5 20.1 12.3 17.3 3.6 40.8 2.7 59.3 12.5 19.8 10.4 39.9 14.1 55.9 10.4 11.6-2.6 21.1-9.6 25.9-20.2 12.5-.1 26.3-5.4 48.3-6.6 14.9-1.2 33.6 5.3 55.1 4.1 .6 2.3 1.4 4.6 2.5 6.7v.1c8.3 16.7 23.8 24.3 40.3 23 16.6-1.3 34.1-11 48.3-27.9 13.6-16.4 36-23.2 50.9-32.2 7.4-4.5 13.4-10.1 13.9-18.3 .4-8.2-4.4-17.3-15.5-29.7zM223.7 87.3c9.8-22.2 34.2-21.8 44-.4 6.5 14.2 3.6 30.9-4.3 40.4-1.6-.8-5.9-2.6-12.6-4.9 1.1-1.2 3.1-2.7 3.9-4.6 4.8-11.8-.2-27-9.1-27.3-7.3-.5-13.9 10.8-11.8 23-4.1-2-9.4-3.5-13-4.4-1-6.9-.3-14.6 2.9-21.8zM183 75.8c10.1 0 20.8 14.2 19.1 33.5-3.5 1-7.1 2.5-10.2 4.6 1.2-8.9-3.3-20.1-9.6-19.6-8.4 .7-9.8 21.2-1.8 28.1 1 .8 1.9-.2-5.9 5.5-15.6-14.6-10.5-52.1 8.4-52.1zm-13.6 60.7c6.2-4.6 13.6-10 14.1-10.5 4.7-4.4 13.5-14.2 27.9-14.2 7.1 0 15.6 2.3 25.9 8.9 6.3 4.1 11.3 4.4 22.6 9.3 8.4 3.5 13.7 9.7 10.5 18.2-2.6 7.1-11 14.4-22.7 18.1-11.1 3.6-19.8 16-38.2 14.9-3.9-.2-7-1-9.6-2.1-8-3.5-12.2-10.4-20-15-8.6-4.8-13.2-10.4-14.7-15.3-1.4-4.9 0-9 4.2-12.3zm3.3 334c-2.7 35.1-43.9 34.4-75.3 18-29.9-15.8-68.6-6.5-76.5-21.9-2.4-4.7-2.4-12.7 2.6-26.4v-.2c2.4-7.6 .6-16-.6-23.9-1.2-7.8-1.8-15 .9-20 3.5-6.7 8.5-9.1 14.8-11.3 10.3-3.7 11.8-3.4 19.6-9.9 5.5-5.7 9.5-12.9 14.3-18 5.1-5.5 10-8.1 17.7-6.9 8.1 1.2 15.1 6.8 21.9 16l19.6 35.6c9.5 19.9 43.1 48.4 41 68.9zm-1.4-25.9c-4.1-6.6-9.6-13.6-14.4-19.6 7.1 0 14.2-2.2 16.7-8.9 2.3-6.2 0-14.9-7.4-24.9-13.5-18.2-38.3-32.5-38.3-32.5-13.5-8.4-21.1-18.7-24.6-29.9s-3-23.3-.3-35.2c5.2-22.9 18.6-45.2 27.2-59.2 2.3-1.7 .8 3.2-8.7 20.8-8.5 16.1-24.4 53.3-2.6 82.4 .6-20.7 5.5-41.8 13.8-61.5 12-27.4 37.3-74.9 39.3-112.7 1.1 .8 4.6 3.2 6.2 4.1 4.6 2.7 8.1 6.7 12.6 10.3 12.4 10 28.5 9.2 42.4 1.2 6.2-3.5 11.2-7.5 15.9-9 9.9-3.1 17.8-8.6 22.3-15 7.7 30.4 25.7 74.3 37.2 95.7 6.1 11.4 18.3 35.5 23.6 64.6 3.3-.1 7 .4 10.9 1.4 13.8-35.7-11.7-74.2-23.3-84.9-4.7-4.6-4.9-6.6-2.6-6.5 12.6 11.2 29.2 33.7 35.2 59 2.8 11.6 3.3 23.7 .4 35.7 16.4 6.8 35.9 17.9 30.7 34.8-2.2-.1-3.2 0-4.2 0 3.2-10.1-3.9-17.6-22.8-26.1-19.6-8.6-36-8.6-38.3 12.5-12.1 4.2-18.3 14.7-21.4 27.3-2.8 11.2-3.6 24.7-4.4 39.9-.5 7.7-3.6 18-6.8 29-32.1 22.9-76.7 32.9-114.3 7.2zm257.4-11.5c-.9 16.8-41.2 19.9-63.2 46.5-13.2 15.7-29.4 24.4-43.6 25.5s-26.5-4.8-33.7-19.3c-4.7-11.1-2.4-23.1 1.1-36.3 3.7-14.2 9.2-28.8 9.9-40.6 .8-15.2 1.7-28.5 4.2-38.7 2.6-10.3 6.6-17.2 13.7-21.1 .3-.2 .7-.3 1-.5 .8 13.2 7.3 26.6 18.8 29.5 12.6 3.3 30.7-7.5 38.4-16.3 9-.3 15.7-.9 22.6 5.1 9.9 8.5 7.1 30.3 17.1 41.6 10.6 11.6 14 19.5 13.7 24.6zM173.3 148.7c2 1.9 4.7 4.5 8 7.1 6.6 5.2 15.8 10.6 27.3 10.6 11.6 0 22.5-5.9 31.8-10.8 4.9-2.6 10.9-7 14.8-10.4s5.9-6.3 3.1-6.6-2.6 2.6-6 5.1c-4.4 3.2-9.7 7.4-13.9 9.8-7.4 4.2-19.5 10.2-29.9 10.2s-18.7-4.8-24.9-9.7c-3.1-2.5-5.7-5-7.7-6.9-1.5-1.4-1.9-4.6-4.3-4.9-1.4-.1-1.8 3.7 1.7 6.5z"/>
+      </svg>
+      <span>Linux</span>
+    </a>
+  </section>
+
+  <section>
+    <a href="#" class="calltoaction">Kontakt</a>
+  </section>
+</footer>
+
+<script>
+  let ctx = document.getElementById("myChart").getContext("2d")
+
+  let data = {
+    labels: [
+      "Zur Wissensvermittlung im Unterricht",
+      "Um den Schülerschaft KI zu erklären",
+      "Für individuelles Feedback",
+      "Zur Vorbereitung des Unterrichts",
+      "Zur Erstellung von Prüfungsfragen",
+      "Zur Kontrolle von Aufgaben/Prüfungen",
+      "Für Prüfungen/ Tests/Klassenarbeiten",
+      "Gebe die Nutzung als Hausaufgabe auf",
+      "Sontiges",
+    ],
+    datasets: [
+      {
+        label: "Wofür KI von lehrerinnen und Lehrern eingesetzt wid",
+        data: [81, 59, 43, 36, 30, 29, 26, 10, 2],
+        backgroundColor: "rgb(255, 99, 132)",
+        borderColor: "rgb(255, 99, 132)",
+        borderWidth: 1,
+      },
+    ],
+  }
+
+  const displayValuePlugin = {
+    id: "displayValue",
+    afterDatasetsDraw(chart) {
+      const { ctx } = chart
+      chart.data.datasets.forEach((dataset, i) => {
+        const meta = chart.getDatasetMeta(i)
+        meta.data.forEach((bar, index) => {
+          const value = dataset.data[index]
+          ctx.save()
+          ctx.fillStyle = "black"
+          ctx.font = "12px Arial"
+          ctx.textAlign = "center"
+          ctx.textBaseline = "middle"
+          ctx.fillText(value, bar.x -7, bar.y)
+          ctx.restore()
+        })
+      })
+    },
+  }
+
+  let myChart = new Chart(ctx, {
+    type: "bar",
+    data: data,
+    options: {
+      indexAxis: "y",
+      responsive: true,
+      scales: {
+        y: {
+          beginAtZero: true,
+        },
+        x: {
+          beginAtZero: true,
+          min: 0,
+          max: 100,
+          ticks: {
+            callback: function (value, index, values) {
+              return value + "%"
+            },
+          },
+        },
+      },
+      plugins: { legend: { position: "right" } },
+      title: {
+        display: true,
+        text: "Inwiefern haben Sie KI für schulische Zwecke genutzt?",
+      },
+    },
+    plugins: [displayValuePlugin],
+  })
+
+
+
+  //Diagram2
+  const data2 = {
+    labels: ['28%','23%','3%','7%', '28%','11%'],
+    datasets: [{
+      label: 'Couleurs Préférées',
+      data: [28, 23, 4, 10, 28, 11],
+      backgroundColor: [
+        'rgba(114,210,116,0.83)',
+        'rgba(135, 206, 235, 1)',
+        'rgba(128, 128, 128, 1)',
+        'rgba(255, 255, 0, 1)',
+        'rgba(0, 0, 255, 1)',
+        'rgba(255, 0, 0, 1)',
+      ],
+      borderWidth: 3
+    }]
+  };
+
+  // Configuration pour le deuxième diagramme
+  const config2 = {
+    type: 'doughnut',
+    data: data2,
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+        }
+      }
+    },
+  };
+  // Instanciation du deuxième diagramme
+  new Chart(document.getElementById('chart2'), config2);
+</script>
 </body>
 </html>

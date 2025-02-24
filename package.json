@@ -2,7 +2,7 @@
   "name": "${PROJECT_NAME}",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "wps2_projektarbeit_Willy_Darcisse_Fonkou_Kamte.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
